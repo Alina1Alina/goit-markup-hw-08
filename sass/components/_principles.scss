@@ -1,0 +1,113 @@
+ .visually-hidden {
+
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     margin: -1px;
+     border: 0;
+     padding: 0;
+
+     white-space: nowrap;
+     clip-path: inset(100%);
+     clip: rect(0 0 0 0);
+     overflow: hidden;
+ }
+
+ .principles__title {
+     color: var(--primary-text-color);
+     margin: 0;
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 1.14;
+     text-transform: uppercase;
+
+     @include mobile {
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em; }
+
+    @include tablet {
+     text-align: left;
+    }
+ }
+
+ .principles__text {
+
+    @include desktop {
+    line-height: 1.7;
+    color: var(--basic-text-color);
+    margin: 0;
+    margin-top: 10px;
+   width: 270px;
+}
+  
+
+     @include mobile {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    margin-top: 10px;
+     }
+
+    @include tablet {
+    margin-top: 10px;
+     width: 270px;
+    }
+
+ }
+
+
+ .principles__list {
+    @include desktop {
+     display: flex;
+
+    }
+
+    @include desktop {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+     }
+    
+
+     @include mobile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+     }
+ }
+
+//  .principles__item:not(:last-child) {
+//      margin-right: 30px;
+//  }
+
+ .principles__box {
+    
+     @include mobile {
+        max-width: 100%;
+        width: 100%;
+        height: 120px;
+        background-color: var(--bgc-color-commands);
+        border-radius: 4px;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+
+    @include tablet {
+        width: 354px; 
+    }
+    
+     @include desktop {
+    max-width: none;
+    width: 270px;
+    height: 120px;
+    background-color: var(--bgc-color-commands);
+    border-radius: 4px;
+     margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+                }
+ }
+
