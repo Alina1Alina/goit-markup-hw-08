@@ -24,8 +24,12 @@
         width: 450px;
         height: 609px;
     }
-     width: 528px;
-     min-height: 581px;
+
+    @include desktop {
+    width: 528px;
+    min-height: 581px;
+    }
+    
      background-color: var(--white-color-text);
      border-radius: 4px;
      position: absolute;
@@ -207,12 +211,20 @@
  .checkbox__label {
 @include mobile {
     font-size: 12px;
-    flex-direction: column;
+    
     text-align: center;
 }
 
 @include tablet {
     font-size: 12px; 
+}
+
+@include desktop {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    
+    margin-top: 20px;
 }
 
      font-weight: 400;
@@ -230,14 +242,24 @@
 
  .checkbox {
     @include mobile {
+        display: flex;
         padding-left: 0;
         text-align: center;
     }
 
+    @include desktop {
+        display: flex;
+    align-items: center;
      padding-left: 7px;
+    }
+
+     
  }
 
  .checkbox__modal-link {
+    @include mobile {
+        display: flex;
+    }
      color: var(--accent-text-color);
  }
 

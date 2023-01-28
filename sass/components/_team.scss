@@ -3,18 +3,7 @@
 }
 
 .team__title {
-    @include desktop {
-     margin-top: 0;
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-        
-    color: var(--primary-text-color)
-    }
-
-    @include mobile {
+ @include mobile {
     font-size: 28px;
     line-height: 1.17;
     text-align: center;
@@ -22,8 +11,18 @@
     margin-bottom: 30px;
 
     color: var(--primary-text-color)
+}
 
-    }
+ @include desktop {
+            margin-top: 0;
+            margin-bottom: 50px;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.16;
+            text-align: center;
+    
+            color: var(--primary-text-color)
+        }
 
 
     

@@ -1,17 +1,5 @@
  .clients__title {
-    @include desktop {
-    text-align: center;
-    margin-bottom: 50px;
-        
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.66;
-    letter-spacing: 0.03em;
-        
-    color: var(--primary-text-color);
-    }
-
-    @include mobile {
+ @include mobile {
     margin-bottom: 30px;
     color: var(--primary-text-color);
     font-weight: 700;
@@ -21,6 +9,18 @@
 
     text-align: center;
     }
+
+ @include desktop {
+text-align: center;
+margin-bottom: 50px;
+        
+ font-weight: 700;
+font-size: 36px;
+line-height: 1.66;
+letter-spacing: 0.03em;
+        
+color: var(--primary-text-color);
+                }
 
 
     
@@ -107,6 +107,10 @@ height: 92px;
  .clients__item {
     @include mobile {
     width: calc((100% - 30px)/2);
+    }
+
+    @include tablet {
+        width: 226px;
     }
 
     @include desktop {

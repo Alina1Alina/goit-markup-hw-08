@@ -16,6 +16,10 @@
     margin-bottom: 20px;
 }
 
+@include desktop {
+   text-align: left; 
+}
+
     color: var(--accent-text-color);
 
     font-family: Raleway, sans-serif;
@@ -26,7 +30,14 @@
 }
 
 .footer__site-contact {
-text-align: center;
+@include mobile {
+    text-align: center;
+}
+
+ @include desktop {
+text-align: left;
+ }   
+
 }
 
 .footer__logo-colors {
@@ -49,6 +60,11 @@ text-align: center;
   @include mobile {
     margin-bottom: 60px;
   }  
+
+  @include desktop {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
 
 
     margin-top: 20px;
@@ -100,6 +116,10 @@ margin-right: 50px;
     margin-bottom: 20px;
 }
 
+@include desktop {
+    text-align: left;
+}
+
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -117,9 +137,13 @@ margin-right: 50px;
 @include mobile {
 margin-bottom: 60px;
 }
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+
+ 
+display: flex;
+justify-content: center;
+gap: 10px;
+
+  
 
 
 }
