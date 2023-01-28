@@ -462,7 +462,7 @@ header {
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    min-height: 581px;
+    height: 581px;
   }
 }
 
@@ -1446,7 +1446,7 @@ header {
 @media screen and (min-width: 1200px) {
   .footer__soc-wrap {
     margin-left: 70px;
-    margin-right: 50px;
+    margin-right: 93px;
   }
 }
 
@@ -1654,16 +1654,9 @@ header {
   margin-left: 10px;
 }
 
-@media screen and (min-width: 768px) {
-  .footer__address-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: space-around;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer__address-wrap {
     display: flex;
+    align-items: baseline;
   }
 }/*# sourceMappingURL=main.css.map */

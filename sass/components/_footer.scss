@@ -104,7 +104,7 @@ margin-bottom: 9px;
 
 @include desktop {
 margin-left: 70px;
-margin-right: 50px;
+margin-right: 93px;
 }
    
 
@@ -324,15 +324,9 @@ margin-top: 0;
 // }
 
 .footer__address-wrap {
-    @include tablet {
-    
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: space-around;
-        }
 
     @include desktop {
         display: flex;
+        align-items: baseline;
     }
 }
