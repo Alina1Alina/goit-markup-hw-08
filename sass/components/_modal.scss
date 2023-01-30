@@ -259,6 +259,7 @@
  .checkbox__modal-link {
     @include mobile {
         display: flex;
+        margin-left: 4px;
     }
      color: var(--accent-text-color);
  }
