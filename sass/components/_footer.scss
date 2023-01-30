@@ -336,5 +336,6 @@ margin-top: 0;
     @include desktop {
         display: flex;
         align-items: baseline;
+        margin-left: 0;
     }
 }
